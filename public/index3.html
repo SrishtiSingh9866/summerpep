@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Form Tags
+    </h1>
+    <!-- <form action="server.jsp" method="post"> -->
+        <form>
+            <h2>Form 1</h2>
+<p>
+    <!-- autofocus attribute is used to start the cursor at the place every refresh -->
+    <!-- <input type="text" autofocus placeholder="Enter name" required/> -->
+    <!-- value will provide default value in box -->
+    <!-- <input type="text" value="naina"/> -->
+
+    <!-- readonly attribute will not allow the user to change the default value  -->
+<!-- <input type="text" value="naina"readonly/> -->
+ <!-- disanled is also a kind of readonly but it greys out the area  -->
+ <!-- <input type="text" value="naina" disabled/>  -->
+
+    
+</p>
+
+
+<p>
+    <input type="text" required size="50px" maxlength="5"/>
+</p>
+<button>Submit</button>
+<!-- another way to submit  -->
+<input type="image"  src="./favicon.ico"/>
+
+<input type="reset"/>
+    </form>
+
+
+<fieldset>  
+    <legend><h3>Login Form</h3></legend>  
+    <form>
+        <h2>Form 2</h2>
+        <input type="email" placeholder="Enter Email"/>
+        <br>
+        <br>
+        <input type="password" placeholder="Enter password"/>
+        <br><br>
+        <input type="date"/><br><br>
+        <h4>Courses</h4>
+        <input type="checkbox"/>java<br><br>
+        <input type="checkbox"/>Python<br><br>
+        <input type="checkbox"/>C++<br><br>
+        <p>
+            <!-- multiple is used to select multiple options at a time  -->
+            <select multiple>
+                <optgroup label="India">
+                <option>Delhi</option>
+                <option>Chennai</option>
+                <option>Heydrabad</option>
+                </optgroup>
+                <optgroup label="US">
+                <option>Miami</option>
+                <option>Venna</option>
+                <option>Georgia</option>
+                </optgroup>
+            </select>
+        </p>
+        <input type="radio" name="batch"/>Morning Batch
+        <input type="radio" name="batch"/>Evening Batch
+        <br><br>
+        <p>Data List
+            <input list="country"/>
+                <datalist id="country">
+                    <option>India</option>
+                    <option>USA</option>
+                    <option>China</option>
+                </datalist>
+        </p>
+        <br><br>
+        <p>
+            <textarea rows="4" cols="10" placeholder="About me"></textarea>
+        </p>
+        <br><br>
+        <input type="file">
+        <br>
+        <br>
+        <p>Colors</p>
+        <input type="color"/>
+        <br><br>
+        <label for="chk">Remember Me
+        </label>
+       <input type="checkbox" id="chk"/>
+       
+       <br><br>
+    <button>Login</button>
+    </form>
+    </fieldset>
+
+    <h2>Form 2</h2>
+<fieldset>  
+    <legend><h3>Registration Form</h3></legend>  
+    <form>
+        <h2>Form 2</h2>
+        <input type="email" placeholder="Enter email"/>
+        <br>
+        <br>
+        <input type="password" placeholder="Enter password"/>
+    </form>
+    </fieldset>
+</body>
+</html>
